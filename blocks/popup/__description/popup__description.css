@@ -1,4 +1,5 @@
-.popup__label {
+.popup__description {
+    all: unset;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -7,12 +8,5 @@
     opacity: 0.2;
     border-bottom: 1px solid #000000;
     padding-bottom: 13px;
-}
-
-.popup__label:first-child {
-    margin-bottom: 30px;
-}
-
-.popup__label:last-of-type {
     margin-bottom: 48px;
 }

@@ -1,0 +1,19 @@
+.popup__username {
+    all: unset;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: 0.2;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 13px;
+}
+
+.popup__username:first-child {
+    margin-bottom: 30px;
+}
+
+.popup__username:last-of-type {
+    margin-bottom: 48px;
+}
