@@ -12,12 +12,12 @@
 <body class="page">
   <div class="popup">
     <div class="popup__container">
-      <button type="button" class="popup__close"></button>
+      <button type="button" title="button" class="popup__close"></button>
       <h3 class="popup__title">Редактировать профиль</h3>
-      <form action="#" class="popup__form" name="profile">
-        <label for="username" class="popup__label">Имя</label>
-        <label for="description" class="popup__label">Род деятельности</label>
-        <button type="submit" class="popup__submit" aria-label="Сохранить" disabled="true">Сохранить
+      <form id="form-edit" action="#" class="popup__form" name="profile">
+        <input for="username" class="popup__username" placeholder="Имя"></input>
+        <input for="description" class="popup__description" placeholder="Род деятельности"></input>
+        <button type="submit" class="popup__submit" aria-label="Сохранить">Сохранить
         </button>
       </form>
     </div>
@@ -77,6 +77,6 @@
   </section>
   <section class="footer__copyright">© 2023 Mesto Russia</section>
 </body>
-<link rel="stylesheet" href="./scripts/index.js">
+<script src="./scripts/index.js"></script>
 
 </html>
