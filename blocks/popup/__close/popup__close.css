@@ -5,9 +5,9 @@
     height: 32px;
     margin: 0;
     padding: 0;
-    position: relative;
-    right: -410px;
-    top: -73px;
+    position: absolute;
+    right: -40px;
+    top: -40px;
     transition: .3s ease;
     width: 32px;
 }
