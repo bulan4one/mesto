@@ -7,4 +7,9 @@
   border-radius: 2px;
   transition: all 0.4s ease-in-out;
   background: transparent url("../../../images/Add_Button.png") no-repeat center;
+  cursor: pointer;
+}
+
+.profile__add-place:hover {
+  opacity: 0.6;
 }

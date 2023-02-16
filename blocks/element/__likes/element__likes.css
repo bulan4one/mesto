@@ -2,4 +2,9 @@
     background: transparent url(../../../images/Likes.svg);
     height: 19px;
     width: 22px;
+    cursor: pointer;
+}
+
+.element__likes:hover {
+    opacity: 0.5;    
 }
