@@ -8,13 +8,6 @@
 
 @media screen and (max-width: 900px) {
   .header {
-    margin-bottom: 69px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .header {
-    margin-top: 28px;
-    margin-bottom: 38.25px;    
+    margin-bottom: 38px;
   }
 }

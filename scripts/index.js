@@ -4,6 +4,7 @@ let nameInput = document.querySelector(".popup__username");
 let jobInput = document.querySelector(".popup__description");
 let popup = document.querySelector(".popup");
 let changeNameButton = document.querySelector("#change-profile-name");
+
 changeNameButton.addEventListener("click", function (event) {
   nameInput.value = profileName.textContent;
   jobInput.value = profileDescription.textContent;
