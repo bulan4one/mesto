@@ -6,8 +6,15 @@
   border: 2px solid #fff;
   border-radius: 2px;
   transition: all 0.4s ease-in-out;
-  background: transparent url("../../../images/Add_Button.png") no-repeat center;
+  background: transparent url("../../../images/Plus.png") no-repeat center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .profile__add-place {
+    margin: 0;
+    width: 282px;
+  }
 }
 
 .profile__add-place:hover {

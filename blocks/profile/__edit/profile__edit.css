@@ -10,6 +10,14 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 900px) {
+  .profile__edit {
+   margin-top: 10px;
+   width: 18px;
+   height: 18px;
+  }
+}
+
 .profile__edit:hover {
   opacity: 0.6;
 }

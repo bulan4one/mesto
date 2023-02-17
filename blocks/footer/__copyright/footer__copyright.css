@@ -8,3 +8,12 @@
     max-width: 880px;
     margin: 67px auto 60px;
 }
+
+@media screen and (max-width: 900px) {
+    .footer__copyright {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 36px;
+        margin-top: 0;
+    }
+}
