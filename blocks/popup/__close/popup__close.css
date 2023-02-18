@@ -11,3 +11,13 @@
     transition: .3s ease;
     width: 32px;
 }
+
+@media screen and (max-width: 450px) {
+    .popup__close {
+        background: transparent url(../../../images/close_icon_small.png);
+        height: 20px;
+        right: 0;
+        top: -36px;
+        width: 20px;
+    }
+}
