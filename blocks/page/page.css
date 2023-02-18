@@ -2,10 +2,11 @@
   margin: 0 auto;
   max-width: 1280px;
   background-color: #000000;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 900px) {
   .page {
-   margin: 0 19px;
+    margin: 0 19px;
   }
 }
