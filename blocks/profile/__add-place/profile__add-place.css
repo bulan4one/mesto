@@ -4,16 +4,17 @@
   min-width: 150px;
   min-height: 50px;
   border: 2px solid #fff;
-  border-radius: 2px;
   transition: all 0.4s ease-in-out;
-  background: transparent url("../../../images/Plus.png") no-repeat center;
+  background: transparent url("../../../images/plus_svg.svg") no-repeat center;
   cursor: pointer;
+  background-size: 22px 22px;
 }
 
 @media screen and (max-width: 900px) {
   .profile__add-place {
     margin: 0;
     width: 282px;
+    background-size: 16px 16px;
   }
 }
 

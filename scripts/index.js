@@ -8,11 +8,11 @@ let changeNameButton = document.querySelector("#change-profile-name");
 changeNameButton.addEventListener("click", function (event) {
   nameInput.value = profileName.textContent;
   jobInput.value = profileDescription.textContent;
-  popup.classList.add("popup__opened");
+  popup.classList.add("popup_opened");
 });
 
 function popupClose() {
-  popup.classList.remove("popup__opened");
+  popup.classList.remove("popup_opened");
 }
 
 let closePopup = document.querySelector(".popup__close");

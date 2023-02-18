@@ -3,3 +3,5 @@
 Верстка проекта по макету. Реализована возможность изменения имени профиля и описания, открытие и закрытие формы по клику, при помощи JavaScript.
  
  [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+
+Ссылка на gh-pages: https://bulan4one.github.io/mesto/
