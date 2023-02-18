@@ -4,10 +4,11 @@
   width: 24px;
   height: 24px;
   border: 1px solid #fff;
-  background: transparent url("../../../images/Edit_Button.png") no-repeat
+  background: transparent url("../../../images/edit_button_svg.svg") no-repeat
     center;
   transition: all 0.4s ease-in-out;
   cursor: pointer;
+  background-size: 10px;
 }
 
 @media screen and (max-width: 900px) {
@@ -15,6 +16,7 @@
    margin-top: 10px;
    width: 18px;
    height: 18px;
+   background-size: 7.5px;
   }
 }
 

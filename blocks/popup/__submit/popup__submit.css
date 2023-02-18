@@ -3,7 +3,6 @@
     color: white;
     min-width: 358px;
     min-height: 50px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -21,5 +20,5 @@
 }
 
 .popup__submit:hover {
-    opacity: 0.8;
+    background-color: rgb(0,0,0, .8)
 }
