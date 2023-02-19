@@ -23,65 +23,70 @@
     </div>
   </div>
   <header class="header">
-    <img src="./images/mesto_russia.png" alt="Место" class="header__logo" />
+    <img src="./images/Mesto_svg.svg" alt="Место" class="header__logo" />
   </header>
-  <section class="profile">
-    <div class="profile__avatar_area">
-      <img src="./images/Kusto.jpg" alt="Кусто" class="profile__avatar" />
-    </div>
-    <div class="profile__info">
-      <h1 class="profile__name">Жак-Ив Кусто</h1>
-      <button type="button" id="change-profile-name" class="profile__edit" aria-label="Редактировать профиль"></button>
-      <p class="profile__description">Исследователь океана</p>
-    </div>
-    <button type="button" class="profile__add-place" aria-label="Добавить место"></button>
-  </section>
-  <section class="elements">
-    <li class="element">
-      <img src="./images/photo1.jpg" alt="Фото1" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Океан</h3>
-        <div class="element__likes"></div>
+  <div class="main">
+    <section class="profile">
+      <div class="profile__avatar_area">
+        <img src="./images/Kusto.jpg" alt="Кусто" class="profile__avatar" />
       </div>
-    </li>
-    <li class="element">
-      <img src="./images/photo2.jpg" alt="Фото2" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Морской Кактус</h3>
-        <div class="element__likes"></div>
+      <div class="profile__info">
+        <h1 class="profile__name">Жак-Ив Кусто</h1>
+        <button type="button" id="change-profile-name" class="profile__edit"
+          aria-label="Редактировать профиль"></button>
+        <p class="profile__description">Исследователь океана</p>
       </div>
-    </li>
-    <li class="element">
-      <img src="./images/photo3.jpg" alt="Фото3" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Акула</h3>
-        <div class="element__likes"></div>
-      </div>
-    </li>
-    <li class="element">
-      <img src="./images/photo4.jpg" alt="Фото4" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Черепаха</h3>
-        <div class="element__likes"></div>
-      </div>
-    </li>
-    <li class="element">
-      <img src="./images/photo5.jpg" alt="Фото5" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Желтая Рыбка</h3>
-        <div class="element__likes"></div>
-      </div>
-    </li>
-    <li class="element">
-      <img src="./images/photo6.jpg" alt="Фото6" class="element__img">
-      <div class="element__block">
-        <h3 class="element__title">Девушка</h3>
-        <div class="element__likes"></div>
-      </div>
-    </li>
-  </section>
-  <section class="footer">© 2023 Mesto Russia</section>
+      <button type="button" class="profile__add-place" aria-label="Добавить место"></button>
+    </section>
+    <section class="elements">
+      <article class="element">
+        <img src="./images/photo1.jpg" alt="Океан" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Океан</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img src="./images/photo2.jpg" alt="Морской Кактус" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Морской Кактус</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img src="./images/photo3.jpg" alt="Акула" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Акула</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img src="./images/photo4.jpg" alt="Черепаха" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Черепаха</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img src="./images/photo5.jpg" alt="Желтая Рыбка" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Желтая Рыбка</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+      <article class="element">
+        <img src="./images/photo6.jpg" alt="Девушка" class="element__img">
+        <div class="element__block">
+          <h2 class="element__title">Девушка</h2>
+          <button type="submit" title="Лайк" class="element__likes"></button>
+        </div>
+      </article>
+    </section>
+  </div>
+  <footer class="footer">
+    <p class="footer__copyright">© 2023 Mesto Russia</p>
+  </footer>
+  <script src="./scripts/index.js"></script>
 </body>
-<script src="./scripts/index.js"></script>
 
 </html>

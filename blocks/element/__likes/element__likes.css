@@ -3,6 +3,7 @@
     height: 19px;
     width: 22px;
     cursor: pointer;
+    border: none;
 }
 
 .element__likes:hover {
