@@ -15,8 +15,8 @@
       <button type="button" title="button" class="popup__close"></button>
       <h3 class="popup__title">Редактировать профиль</h3>
       <form id="form-edit" action="#" class="popup__form" name="profile">
-        <input class="popup__input popup__input_username" placeholder="Имя">
-        <input class="popup__input popup__input_description" placeholder="Род деятельности">
+        <input name="Имя" class="popup__input popup__input_type_username" placeholder="Имя">
+        <input name="Род деятельности" class="popup__input popup__input_type_description" placeholder="Род деятельности">
         <button type="submit" class="popup__submit" aria-label="Сохранить">Сохранить
         </button>
       </form>
@@ -27,7 +27,7 @@
     <img src="./images/Mesto_svg.svg" alt="Место" class="header__logo" />
   </header>
 
-  <div class="main">
+  <main>
     <section class="profile">
       <div class="profile__avatar">
         <img src="./images/Kusto.jpg" alt="Кусто" class="profile__avatar-area" />
@@ -84,7 +84,8 @@
         </div>
       </article>
     </section>
-  </div>
+    </div>
+  </main>
   <footer class="footer">
     <p class="footer__copyright">© 2023 Mesto Russia</p>
   </footer>

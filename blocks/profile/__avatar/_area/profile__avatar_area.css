@@ -6,7 +6,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .profile__avatar_area {
-    margin-bottom: 22px;
+  .profile__avatar-area {
+    margin-bottom: 22.25px;
   }
 }

@@ -1,7 +1,7 @@
 let profileName = document.querySelector(".profile__name");
 let profileDescription = document.querySelector(".profile__description");
-let nameInput = document.querySelector(".popup__input_username");
-let jobInput = document.querySelector(".popup__input_description");
+let nameInput = document.querySelector(".popup__input_type_username");
+let jobInput = document.querySelector(".popup__input_type_description");
 let popup = document.querySelector(".popup");
 let changeNameButton = document.querySelector("#change-profile-name");
 
