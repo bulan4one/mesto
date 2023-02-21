@@ -16,9 +16,7 @@ function popupClose() {
 }
 
 let closePopup = document.querySelector(".popup__close");
-closePopup.addEventListener("click", function (event) {
-  popupClose();
-});
+closePopup.addEventListener("click", popupClose);
 
 let formElement = document.querySelector("#form-edit");
 formElement.addEventListener("submit", function (event) {
