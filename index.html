@@ -40,8 +40,10 @@
       </div>
       <button type="button" class="profile__add-place" aria-label="Добавить место"></button>
     </section>
-    <section class="elements">
+
+    <template class="elements" id="cardTemplate">
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo1.jpg" alt="Океан" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Океан</h2>
@@ -49,6 +51,7 @@
         </div>
       </article>
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo2.jpg" alt="Морской Кактус" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Морской Кактус</h2>
@@ -56,6 +59,7 @@
         </div>
       </article>
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo3.jpg" alt="Акула" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Акула</h2>
@@ -63,6 +67,7 @@
         </div>
       </article>
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo4.jpg" alt="Черепаха" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Черепаха</h2>
@@ -70,6 +75,7 @@
         </div>
       </article>
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo5.jpg" alt="Желтая Рыбка" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Желтая Рыбка</h2>
@@ -77,14 +83,17 @@
         </div>
       </article>
       <article class="element">
+        <button type="button" class="element__delete">Удалить</button>
         <img src="./images/photo6.jpg" alt="Девушка" class="element__img">
         <div class="element__block">
           <h2 class="element__title">Девушка</h2>
           <button type="button" title="Лайк" class="element__likes"></button>
         </div>
       </article>
-    </section>
+    </template>
+
   </main>
+  
   <footer class="footer">
     <p class="footer__copyright">© 2023 Mesto Russia</p>
   </footer>
