@@ -73,8 +73,17 @@ initialCards.forEach(function (card) {
   const cardImage = cardTemplate.querySelector(".element__img");
   cardImage.setAttribute("src", card.link);
   cardImage.setAttribute("alt", card.alt);
+  const deleteButton = cardTemplate.querySelector('.element__delete')
+  deleteButton.addEventListener('click', handleDeleteButtonClick)
   elements.append(cardTemplate);
 });
+
+function handleDeleteButtonClick(event) {
+  const button = event.target
+  const card = button.closest(".element")
+  card.remove()
+}
+//Попап карточек
 
 let popupAddCard = document.querySelector("#popup-add-card");
 let addCardClose = popupAddCard.querySelector(".popup__close");
