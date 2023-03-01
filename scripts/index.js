@@ -49,7 +49,9 @@ function popupClose(popup) {
 }
 
 let closePopup = document.querySelector(".popup__close");
-closePopup.addEventListener("click", popupClose.apply(null, popupChangeProfile));
+closePopup.addEventListener("click", function () {
+  popupClose(popupChangeProfile);
+});
 
 let formElement = document.querySelector("#form-edit");
 formElement.addEventListener("submit", function (event) {
@@ -75,9 +77,12 @@ initialCards.forEach(function (card) {
 });
 
 let popupAddCard = document.querySelector("#popup-add-card");
+let addCardClose = popupAddCard.querySelector(".popup__close");
 let buttonOpen = document.querySelector(".profile__add-place");
 buttonOpen.addEventListener("click", function (event) {
   popupAddCard.classList.add("popup_opened");
+});
 
-  event.preventDefault();
+addCardClose.addEventListener("click", function () {
+  popupClose(popupAddCard);
 });
