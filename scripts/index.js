@@ -64,7 +64,7 @@ formElement.addEventListener("submit", function (event) {
 //Создание карточек по шаблону
 const elements = document.querySelector(".elements");
 
-initialCards.forEach(function (card) {
+function createCard(card) {
   const cardTemplate = document
     .querySelector("#cardTemplate")
     .content.cloneNode(true);
@@ -73,15 +73,17 @@ initialCards.forEach(function (card) {
   const cardImage = cardTemplate.querySelector(".element__img");
   cardImage.setAttribute("src", card.link);
   cardImage.setAttribute("alt", card.alt);
-  const deleteButton = cardTemplate.querySelector('.element__delete')
-  deleteButton.addEventListener('click', handleDeleteButtonClick)
+  const deleteButton = cardTemplate.querySelector(".element__delete");
+  deleteButton.addEventListener("click", handleDeleteButtonClick);
   elements.append(cardTemplate);
-});
+};
+
+initialCards.forEach(createCard)
 
 function handleDeleteButtonClick(event) {
-  const button = event.target
-  const card = button.closest(".element")
-  card.remove()
+  const button = event.target;
+  const card = button.closest(".element");
+  card.remove();
 }
 //Попап карточек
 
@@ -95,3 +97,31 @@ buttonOpen.addEventListener("click", function (event) {
 addCardClose.addEventListener("click", function () {
   popupClose(popupAddCard);
 });
+
+// const submit = popupAddCard.querySelector('.popup__submit')
+// form.addEventListener('submit', handleFormSubmit)
+
+// function handleFormSubmit(event) {
+//   event.preventDefault()
+//   const submit = event.target
+//   const name = popupAddCard.querySelector('.element__title').value
+//   const link = popupAddCard.querySelector('.element__img').value
+//   const card = { name, link }
+
+// createCard(card)
+// }
+
+
+const form = document.querySelector('.popup__form')
+form.addEventListener('submit', handleFormSubmit)
+
+function handleFormSubmit(event) {
+  event.preventDefault()
+  const form = event.target
+  const link = form.querySelector('.popup__input_image').value
+  const name = form.querySelector('.popup__input_name').value
+  const card = {
+    name, link
+  }
+  createCard(card)
+}
