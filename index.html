@@ -9,6 +9,8 @@
   <title>Место</title>
 </head>
 
+<!-- Редактирование профиля -->
+
 <body class="page">
   <div class="popup" id="popup-change-profile">
     <div class="popup__container">
@@ -23,6 +25,8 @@
     </div>
   </div>
 
+  <!-- Добавление фото -->
+
   <div class="popup" id="popup-add-card">
     <div class="popup__container">
       <button type="button" title="Закрыть" class="popup__close"></button>
@@ -36,11 +40,15 @@
     </div>
   </div>
 
+  <!-- Модульная картинка -->
+
   <div class="popup" id="popup-full-image">
-    <div class="popup__container">
+    <!-- <div class="popup__container"> -->
+      <figure>
       <img src="" alt="Самолет в небе" class="popup__pic">
-      <button type="button" title="Закрыть" class="popup__close"></button>
-      <h3 class="popup__pic-description">Самолет в небе</h3>
+      <figcaption class="popup__pic-description">Самолет в небе</figcaption>
+    </figure>
+      <button type="button" title="Закрыть" class="popup__close popup__close_modal"></button>
     </div>
   </div>
 

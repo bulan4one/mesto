@@ -86,7 +86,7 @@ function createCard(card, addToStart) {
   const deleteButton = cardTemplate.querySelector(".element__delete");
   deleteButton.addEventListener("click", handleDeleteButtonClick);
 
-  // Лайки
+// Лайки
 
   let likeActive = cardTemplate.querySelector(".element__likes");
   likeActive.addEventListener("click", function (event) {
@@ -94,7 +94,7 @@ function createCard(card, addToStart) {
   
 });
 
-// Модульная картинка 
+// Модульная картинка
 
 cardImage.addEventListener("click", function(event){
   popupFullPic.classList.add("popup_opened")
@@ -102,7 +102,9 @@ cardImage.addEventListener("click", function(event){
   popupFullPicImage.setAttribute("src", card.link)
   popupFullPicImage.setAttribute("name", card.name)
   popupFullPicImage.setAttribute("alt", card.alt)
-  
+
+  let popupFullPicDescription = document.querySelector('.popup__pic-description')
+    
 })
 
 if (addToStart) {
