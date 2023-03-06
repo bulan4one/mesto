@@ -31,3 +31,5 @@
 @import url(../blocks/element/__likes/_active/element__likes_active.css);
 @import url(..//blocks/element/__delete/element__delete.css);
 @import url(../blocks/popup/__pic/popup__pic.css);
+@import url(../blocks/popup/__close/_modal/popup__close_modal.css);
+@import url(../blocks/popup/__pic/popup__pic-description.css);

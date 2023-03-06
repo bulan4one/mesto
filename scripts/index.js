@@ -77,8 +77,8 @@ const elements = document.querySelector(".elements");
 function createCard(card, addToStart) {
   const cardTemplate = document
     .querySelector("#cardTemplate")
-    .content.cloneNode(true);  
-    const cardHeading = cardTemplate.querySelector(".element__title");
+    .content.cloneNode(true);
+  const cardHeading = cardTemplate.querySelector(".element__title");
   cardHeading.textContent = card.name;
   const cardImage = cardTemplate.querySelector(".element__img");
   cardImage.setAttribute("src", card.link);
@@ -86,28 +86,29 @@ function createCard(card, addToStart) {
   const deleteButton = cardTemplate.querySelector(".element__delete");
   deleteButton.addEventListener("click", handleDeleteButtonClick);
 
-// Лайки
+  // Лайки
 
   let likeActive = cardTemplate.querySelector(".element__likes");
   likeActive.addEventListener("click", function (event) {
-    likeActive.classList.toggle("element__likes_active"); 
-  
-});
+    likeActive.classList.toggle("element__likes_active");
+  });
 
-// Модульная картинка
+  // Модульная картинка
 
-cardImage.addEventListener("click", function(event){
-  popupFullPic.classList.add("popup_opened")
-  const popupFullPicImage = popupFullPic.querySelector(".popup__pic")
-  popupFullPicImage.setAttribute("src", card.link)
-  popupFullPicImage.setAttribute("name", card.name)
-  popupFullPicImage.setAttribute("alt", card.alt)
+  cardImage.addEventListener("click", function (event) {
+    popupFullPic.classList.add("popup_opened");
+    const popupFullPicImage = popupFullPic.querySelector(".popup__pic");
+    popupFullPicImage.setAttribute("src", card.link);
+    popupFullPicImage.setAttribute("name", card.name);
+    popupFullPicImage.setAttribute("alt", card.name);
 
-  let popupFullPicDescription = document.querySelector('.popup__pic-description')
-    
-})
+    let popupFullPicDescription = document.querySelector(
+      ".popup__pic-description"
+    );
+    popupFullPicDescription.textContent = cardHeading.textContent;
+  });
 
-if (addToStart) {
+  if (addToStart) {
     elements.prepend(cardTemplate);
   } else {
     elements.append(cardTemplate);
@@ -153,5 +154,3 @@ function handleFormSubmit(event) {
   form.reset();
   popupClose(popupAddCard);
 }
-
-

@@ -9,4 +9,5 @@
     width: 100%;
     height: 100%;
     background-color: #00000050;
+    transition: visibility 0.2s, opacity 0.2s linear;
 }
