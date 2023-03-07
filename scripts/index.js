@@ -64,7 +64,7 @@ function createHtmlCard(card) {
 
   const likeActive = htmlCard.querySelector(".element__likes");
   likeActive.addEventListener("click", function (event) {
-    likeActive.classList.toggle("elementlikes_active");
+    likeActive.classList.toggle("element__likes_active");
   });
 
   // Модульная картинка
