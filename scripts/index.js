@@ -20,29 +20,29 @@ changeNameButton.addEventListener("click", function (event) {
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
+  formAddCard.reset()
 }
 
-function closePopup(popupCloseButton) {
-  popupCloseButton.classList.remove("popup_opened");
+function closePopup(popup) {
+  popup.classList.remove("popup_opened");
 }
 
-const closePopupButton = document.querySelector(".popup__close");
-closePopupButton.addEventListener("click", function () {
+const buttonCloseEditProfileForm = document.querySelector(".popup__close");
+buttonCloseEditProfileForm.addEventListener("click", function () {
   closePopup(popupChangeProfile);
 });
 
-const closePopupFullImage = popupFullPic.querySelector(".popup__close");
-closePopupFullImage.addEventListener("click", function () {
+const buttonCloseImagePopup = popupFullPic.querySelector(".popup__close");
+buttonCloseImagePopup.addEventListener("click", function () {
   closePopup(popupFullPic);
 });
 
-const formElement = document.querySelector("#form-edit");
-formElement.addEventListener("submit", function (event) {
+const formEditProfile = document.querySelector("#form-edit");
+formEditProfile.addEventListener("submit", function (event) {
   event.preventDefault();
   profileName.textContent = nameInput.value;
   profileDescription.textContent = jobInput.value;
   closePopup(popupChangeProfile);
-  form.reset();
 });
 
 //Создание карточек по шаблону
@@ -103,23 +103,22 @@ function handleDeleteButtonClick(event) {
 //Попап карточек
 
 const popupAddCard = document.querySelector("#popup-add-card");
-const addCardClose = popupAddCard.querySelector(".popup__close");
+const buttonOpenAddCardForm = popupAddCard.querySelector(".popup__close");
 const buttonOpen = document.querySelector(".profile__add-place");
 buttonOpen.addEventListener("click", function (event) {
   openPopup(popupAddCard);
 });
 
-addCardClose.addEventListener("click", function () {
+buttonOpenAddCardForm.addEventListener("click", function () {
   closePopup(popupAddCard);
-  form.reset();
 });
 
 //Добавление новых карточек
 
-const form = document.querySelector("#form-edit-cards");
-form.addEventListener("submit", handleFormSubmit);
+const formAddCard = document.querySelector("#form-edit-cards");
+formAddCard.addEventListener("submit", submitAddCardForm);
 
-function handleFormSubmit(event) {
+function submitAddCardForm(event) {
   event.preventDefault();
   const form = event.target;
   const card = {
@@ -129,6 +128,5 @@ function handleFormSubmit(event) {
 
   const htmlCard = createHtmlCard(card);
   addHtmlCardToDom(htmlCard, true);
-  form.reset();
   closePopup(popupAddCard);
 }
