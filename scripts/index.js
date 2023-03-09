@@ -20,7 +20,6 @@ changeNameButton.addEventListener("click", function (event) {
 
 function openPopup(popup) {
   popup.classList.add("popup_opened");
-  formAddCard.reset()
 }
 
 function closePopup(popup) {
@@ -103,13 +102,14 @@ function handleDeleteButtonClick(event) {
 //Попап карточек
 
 const popupAddCard = document.querySelector("#popup-add-card");
-const buttonOpenAddCardForm = popupAddCard.querySelector(".popup__close");
-const buttonOpen = document.querySelector(".profile__add-place");
-buttonOpen.addEventListener("click", function (event) {
+const buttonCloseAddCardForm = popupAddCard.querySelector(".popup__close");
+const buttonOpenAddCardForm = document.querySelector(".profile__add-place");
+buttonOpenAddCardForm.addEventListener("click", function (event) {
   openPopup(popupAddCard);
+  formAddCard.reset();
 });
 
-buttonOpenAddCardForm.addEventListener("click", function () {
+buttonCloseAddCardForm.addEventListener("click", function () {
   closePopup(popupAddCard);
 });
 
